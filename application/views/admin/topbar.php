@@ -1,7 +1,7 @@
 
 <!-- Content Wrapper -->
 <div id="content-wrapper" class="d-flex flex-column">
-    <!-- Main Content -->
+   <!-- Main Content -->
         <div id="content">
         <!-- Topbar -->
             <nav class="navbar navbar-expand navbar-light bg-white
