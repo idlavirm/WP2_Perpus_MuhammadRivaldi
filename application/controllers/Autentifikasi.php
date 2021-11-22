@@ -4,7 +4,7 @@ class Autentifikasi extends CI_Controller
     public function index()
     {
     //jika statusnya sudah login, maka tidak bisa mengakses
-    halaman login alias dikembalikan ke tampilan user
+    //halaman login alias dikembalikan ke tampilan user
     if($this->session->userdata('email')){
     redirect('user');
     }
@@ -13,8 +13,7 @@ class Autentifikasi extends CI_Controller
     if ($this->form_validation->run() == false) {
     $data['judul'] = 'Login';
     $data['user'] = '';
-    //kata 'login' merupakan nilai dari variabel judul dalam
-    array $data dikirimkan ke view aute_header
+    //kata 'login' merupakan nilai dari variabel judul dalam array$data dikirimkan ke view aute_header
     $this->load->view('templates/aute_header', $data);
     $this->load->view('autentifikasi/login');
     $this->load->view('templates/aute_footer');
