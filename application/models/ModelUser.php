@@ -29,6 +29,6 @@ class ModelUser extends CI_Model
         $this->db->from('user');         
         $this->db->limit(10, 0);         
         return $this->db->get(); 
-    } 
+    }
  
 }
